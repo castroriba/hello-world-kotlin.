@@ -1,21 +1,25 @@
-# Overview
+Project Description
+This is a Kotlin-based Inventory Management System designed to help users track products, quantities, and pricing. In this second module, I expanded the application to include Data Persistence. The software now uses File I/O to save the entire inventory list to a local text file (inventory.txt) and automatically reloads that data whenever the program is launched. This ensures that no data is lost when the application is closed.
 
-As a software engineer, I am developing this project to master the fundamentals of setting up a professional development environment and to practice the workflow of version control using Git and GitHub.
+New Features in Module 2
+Automatic Data Loading: On startup, the app reads from inventory.txt to restore the previous session's data.
 
-This software is a Kotlin-based application that introduces the user to the programming environment.
+Data Saving: Upon exiting, the app writes all current items into a structured text format.
 
-The purpose of this software is to demonstrate a successful installation of the Kotlin SDK and the IntelliJ IDEA editor while outputting a personalized greeting.
+Error Handling: Added checks to ensure the program starts "fresh" if no save file is found, preventing crashes.
 
-Provide a link to your YouTube demonstration.  It should be a one-minute demo of the software running and a walkthrough of the code.
+Expanded Logic: Integrated Search, Update, and Delete functions to manage a dynamic list of over 100 lines of code.
 
-[Software Demo Video](https://youtu.be/_AGtnVFAFaM)
+Development Environment
+Language: Kotlin
 
-# Development Environment
+IDE: IntelliJ IDEA
 
-I used IntelliJ IDEA 2025 as my Integrated Development Environment (IDE) and Git for version control.
+Libraries: java.io.File for file management.
 
-The software was written using the Kotlin programming language running on Oracle OpenJDK 25.
+Future Improvements
+JSON Integration: Switch from plain text to JSON format for more structured data storage.
 
-# Useful Websites
-* [Kotlin Documentation](https://kotlinlang.org/docs/home.html)
-* [IntelliJ IDEA Help](https://www.jetbrains.com/help/idea/getting-started.html)
+Graphical Interface: Move the app from the console to a windowed GUI using TornadoFX or Compose for Desktop.
+
+Input Validation: Add more robust "try-catch" blocks to prevent the user from entering letters where numbers are expected.
