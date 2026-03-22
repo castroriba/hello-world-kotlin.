@@ -1,5 +1,9 @@
+Inventory Management System (Kotlin)
 Project Description
 This is a Kotlin-based Inventory Management System designed to help users track products, quantities, and pricing. In this second module, I expanded the application to include Data Persistence. The software now uses File I/O to save the entire inventory list to a local text file (inventory.txt) and automatically reloads that data whenever the program is launched. This ensures that no data is lost when the application is closed.
+
+Video Demo
+View the Software Demo & Code Walkthrough here - https://youtu.be/G9PqE7CsS3o
 
 New Features in Module 2
 Automatic Data Loading: On startup, the app reads from inventory.txt to restore the previous session's data.
@@ -17,9 +21,18 @@ IDE: IntelliJ IDEA
 
 Libraries: java.io.File for file management.
 
+How to Use
+Clone this repository to your local machine.
+
+Open the project in IntelliJ IDEA.
+
+Ensure a file named inventory.txt exists in the root directory (the program will create a fresh one if it is missing).
+
+Run the InventoryItem.kt (or Main.kt) file.
+
 Future Improvements
 JSON Integration: Switch from plain text to JSON format for more structured data storage.
 
-Graphical Interface: Move the app from the console to a windowed GUI using TornadoFX or Compose for Desktop.
+Graphical Interface: Move the app from the console to a windowed GUI using Compose for Desktop.
 
 Input Validation: Add more robust "try-catch" blocks to prevent the user from entering letters where numbers are expected.
